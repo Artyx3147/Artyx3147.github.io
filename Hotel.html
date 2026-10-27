@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio - App de hotel</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@700;800&family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+<header>
+<div class="logo"><i></i><span><strong>Arturo Martín de la Sierra</strong> / Técnico de DAM</span></div>
+<nav><a href="index.html">SOBRE MÍ</a><a href="Curriculum.html">CURRÍCULUM</a><a href="Proyectos.html" class="on">PROYECTOS</a><a href="Contacto.html">CONTACTO</a></nav>
+</header>
+<section class="banner"><div class="wrap"><h1>App de hotel</h1><p>Consulta las habitaciones de un hotel y todos sus detalles desde una interfaz de escritorio clara y rápida.</p></div></section>
+<main class="up"><div class="wrap">
+
+<div class="fila" style="margin-bottom:22px"><div><span class="tag">Java</span><span class="tag">JavaFX</span><span class="tag">FXML</span></div><a class="btn alt" style="margin:0" href="Proyectos.html">← VOLVER A PROYECTOS</a></div>
+
+<article class="card">
+<h2>¿Qué hace el programa?</h2>
+<p>HotelApp es una aplicación de escritorio que muestra en una tabla la lista de habitaciones de un hotel (en este caso, el Hotel Sol) junto con sus detalles. La interfaz está construida con JavaFX y FXML.</p>
+<p>Está diseñada para visualizar de un vistazo el inventario completo de habitaciones, sus características y su estado en tiempo real.</p>
+</article>
+
+<article class="card">
+<h2>Funcionalidades</h2>
+<div class="grid" style="margin-top:16px">
+<div class="feat"><h3>Listado de habitaciones</h3><p>Tabla interactiva con todas las habitaciones del hotel y desplazamiento vertical para recorrerlas todas fácilmente.</p></div>
+<div class="feat"><h3>Información detallada</h3><p>Para cada habitación se muestra su número, planta, tipo, capacidad, precio por noche, vistas y estado actual.</p></div>
+<div class="feat"><h3>Buscador por número</h3><p>Escribe el número de habitación y pulsa «Buscar»: la app la selecciona automáticamente en la tabla e indica su estado.</p></div>
+</div>
+</article>
+
+<article class="card">
+<h2>Estados de una habitación</h2>
+<p>La columna «Estado» indica la situación en la que se encuentra cada habitación:</p>
+<div class="chips" style="margin-top:14px">
+<span class="est ok">Disponible</span>
+<span class="est occ">Ocupado</span>
+<span class="est mnt">Mantenimiento</span>
+</div>
+</article>
+
+<article class="card">
+<h2>Cómo se usa</h2>
+<ol class="pasos" style="margin-top:16px">
+<li><span>Abre la aplicación: verás la tabla principal con todas las habitaciones registradas.</span></li>
+<li><span>Desplázate por la tabla para consultar planta, tipo, capacidad, precio por noche, vistas y estado de cada habitación.</span></li>
+<li><span>Para localizar una habitación en concreto, introduce su número en el campo «Nº de habitación» en la parte inferior y pulsa <strong>Buscar</strong>.</span></li>
+<li><span>La aplicación resaltará la fila y mostrará un mensaje descriptivo, por ejemplo: «La habitación 120 está DISPONIBLE».</span></li>
+</ol>
+</article>
+
+<article class="card">
+<h2>Vista previa de la interfaz</h2>
+<img class="shot" src="Img/HotelApp.png" alt="Captura de HotelApp · Hotel Sol: tabla de habitaciones con buscador por número">
+</article>
+
+<article class="card">
+<h2>Tecnologías y requisitos</h2>
+<div class="chips" style="margin-top:14px"><span>Java</span><span>JavaFX</span><span>FXML</span></div>
+<p style="margin-top:16px">Para ejecutar el programa se requiere tener instalado Java JRE (versión 17 o superior) junto con las librerías de JavaFX.</p>
+</article>
+
+<article class="card">
+<h2>Integrantes</h2>
+<div class="persona" style="margin-top:16px"><img src="Img/FotoPortfolio.png" alt="Foto de Arturo Martín de la Sierra"><div><strong>Arturo Martín de la Sierra García</strong><p>Proyecto individual: desarrollo de la lógica en Java, maquetación de la interfaz con FXML e integración con JavaFX.</p></div></div>
+</article>
+
+<article class="card">
+<h2>Contexto del proyecto</h2>
+<p>Proyecto realizado durante el Grado Superior de Desarrollo de Aplicaciones Multiplataforma (DAM), enfocado en la creación de interfaces gráficas de usuario con JavaFX.</p>
+<div class="fila" style="margin-top:18px"><a class="btn" style="margin:0" href="Contacto.html">CONTACTAR</a></div>
+</article>
+
+</div></main>
+<footer>
+<div><p>Política de Privacidad</p><p>&copy; 2026 Creado por Arturo Martín de la Sierra García</p></div>
+<div class="der">
+<div><strong>Teléfono</strong><p>+34 620 22 01 03</p></div>
+<div><strong>Correo</strong><p>arturomsg07@gmail.com</p></div>
+<div><strong>Redes</strong><div class="redes"><a href="https://www.linkedin.com/in/arturo-martin-de-la-sierra3147">LinkedIn</a><img src="Img/LinkedIn_icon.svg.png" alt="Logo de LinkedIn"><a href="https://github.com/Artyx3147">GitHub</a><img src="Img/2111432.png" alt="Logo de GitHub"></div></div>
+</div>
+</footer>
+</body>
+</html>
