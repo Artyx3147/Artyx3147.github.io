@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio - Proyecto 2</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@700;800&family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles/style.css">
+<style>
+.zoom{cursor:zoom-in}
+.visor{position:fixed;inset:0;z-index:20;display:none;align-items:center;justify-content:center;padding:24px;background:rgba(11,16,48,.88);cursor:zoom-out}
+.visor.abierto{display:flex}
+.visor img{max-width:100%;max-height:100%;border:3px solid #fff;border-radius:12px;background:#fff}
+.visor button{position:absolute;top:16px;right:20px;width:44px;height:44px;border:2px solid var(--ink);border-radius:50%;background:var(--sun);color:var(--ink);font:800 24px/1 "Bricolage Grotesque",Arial,sans-serif;cursor:pointer}
+</style>
+</head>
+<body>
+<header>
+<div class="logo"><i></i><span><strong>Arturo Martín de la Sierra</strong> / Técnico de DAM</span></div>
+<nav><a href="index.html">SOBRE MÍ</a><a href="Curriculum.html">CURRÍCULUM</a><a href="Proyectos.html" class="on">PROYECTOS</a><a href="Contacto.html">CONTACTO</a></nav>
+</header>
+<section class="banner"><div class="wrap"><h1>Proyecto 2</h1><p>Consulta las habitaciones del Hotel Sol en una lista de tarjetas con estado visual y una ventana de detalles para cada una.</p></div></section>
+<main class="up"><div class="wrap">
+
+<div class="fila" style="margin-bottom:22px"><div><span class="tag">Java</span><span class="tag">JavaFX</span><span class="tag">FXML</span></div><a class="btn alt" style="margin:0" href="Proyectos.html">← VOLVER A PROYECTOS</a></div>
+
+<article class="card">
+<h2>¿Qué hace el programa?</h2>
+<p>HotelApp · Hotel Sol es una aplicación de escritorio que muestra el listado de habitaciones de un hotel en forma de tarjetas. Cada tarjeta resume el tipo, el precio y la capacidad de la habitación, e indica su estado con una etiqueta de color.</p>
+<p>Desde cada tarjeta se puede abrir una ventana con todos los detalles de la habitación, y un buscador permite localizarla directamente por su número.</p>
+</article>
+
+<article class="card">
+<h2>Funcionalidades</h2>
+<div class="grid" style="margin-top:16px">
+<div class="feat"><h3>Listado de habitaciones</h3><p>Lista con desplazamiento vertical donde cada habitación aparece con su número, tipo, precio y capacidad.</p></div>
+<div class="feat"><h3>Botón «Ver detalles»</h3><p>Abre una ventana con planta, tipo, capacidad, precio por noche, vista, accesibilidad y estado de la habitación.</p></div>
+<div class="feat"><h3>Buscador por número</h3><p>Escribe el número, pulsa «Buscar» y la app resalta la habitación en la lista e indica su estado.</p></div>
+</div>
+</article>
+
+<article class="card">
+<h2>Estados de una habitación</h2>
+<p>Cada tarjeta muestra una etiqueta con la situación actual de la habitación:</p>
+<div class="chips" style="margin-top:14px">
+<span class="est ok">Disponible</span>
+<span class="est occ">Ocupada</span>
+<span class="est mnt">Mantenimiento</span>
+</div>
+</article>
+
+<article class="card">
+<h2>Cómo se usa</h2>
+<ol class="pasos" style="margin-top:16px">
+<li><span>Abre la aplicación: verás la lista con todas las habitaciones del Hotel Sol.</span></li>
+<li><span>Desplázate por la lista para consultar el tipo, el precio, la capacidad y el estado de cada una.</span></li>
+<li><span>Pulsa <strong>Ver detalles</strong> en una habitación para abrir su ventana de información y <strong>Cerrar</strong> para volver a la lista.</span></li>
+<li><span>Para localizar una habitación, introduce su número en «Nº de habitación» (parte inferior) y pulsa <strong>Buscar</strong>: se resaltará la fila y aparecerá un mensaje como «La habitación 120 está DISPONIBLE».</span></li>
+</ol>
+</article>
+
+<article class="card">
+<h2>Vista previa de la interfaz</h2>
+<div class="grid" style="margin-top:16px">
+<figure><img class="shot zoom" style="margin-top:0" src="Img/Prueba1.png" alt="Lista principal de habitaciones de HotelApp · Hotel Sol"><figcaption style="margin-top:8px;font-size:14px;font-weight:700">Lista principal de habitaciones</figcaption></figure>
+<figure><img class="shot zoom" style="margin-top:0" src="Img/Prueba2.png" alt="Ventana de detalles de la habitación 102"><figcaption style="margin-top:8px;font-size:14px;font-weight:700">Detalles de la habitación 102</figcaption></figure>
+<figure><img class="shot zoom" style="margin-top:0" src="Img/Prueba3.png" alt="Detalles de la habitación 126 con la lista desplazada"><figcaption style="margin-top:8px;font-size:14px;font-weight:700">Habitaciones disponibles y en mantenimiento</figcaption></figure>
+<figure><img class="shot zoom" style="margin-top:0" src="Img/Prueba4.png" alt="Habitación 120 resaltada tras usar el buscador"><figcaption style="margin-top:8px;font-size:14px;font-weight:700">Resultado de la búsqueda de la habitación 120</figcaption></figure>
+</div>
+</article>
+
+<article class="card">
+<h2>Tecnologías y requisitos</h2>
+<div class="chips" style="margin-top:14px"><span>Java</span><span>JavaFX</span><span>FXML</span></div>
+<p style="margin-top:16px">Para ejecutar el programa se requiere tener instalado Java JRE (versión 17 o superior) junto con las librerías de JavaFX.</p>
+</article>
+
+<article class="card">
+<h2>Integrantes</h2>
+<div class="persona" style="margin-top:16px"><img src="Img/FotoPortfolio.png" alt="Foto de Arturo Martín de la Sierra"><div><strong>Arturo Martín de la Sierra García</strong></div></div>
+<div class="persona" style="margin-top:16px"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23bdbdbd'/%3E%3Ccircle cx='50' cy='38' r='18' fill='%239e9e9e'/%3E%3Cpath d='M14 100c0-22 16-36 36-36s36 14 36 36z' fill='%239e9e9e'/%3E%3C/svg%3E" alt="Foto de perfil en gris de Héctor García Pascual"><div><strong><a href="https://github.com/Hectorbh78">Héctor García Pascual</a></strong></div></div>
+<div class="persona" style="margin-top:16px"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23bdbdbd'/%3E%3Ccircle cx='50' cy='38' r='18' fill='%239e9e9e'/%3E%3Cpath d='M14 100c0-22 16-36 36-36s36 14 36 36z' fill='%239e9e9e'/%3E%3C/svg%3E" alt="Foto de perfil en gris de Juan Pablo Perdiz Solano"><div><strong><a href="https://github.com/juanpabloperdiz-creator">Juan Pablo Perdiz Solano</a></strong></div></div>
+</article>
+
+<article class="card">
+<h2>Contexto del proyecto</h2>
+<p>Proyecto realizado durante el Grado Superior de Desarrollo de Aplicaciones Multiplataforma (DAM), enfocado en la creación de interfaces gráficas de usuario con JavaFX.</p>
+<div class="fila" style="margin-top:18px"><a class="btn" style="margin:0" href="Contacto.html">CONTACTAR</a></div>
+</article>
+
+</div></main>
+<footer>
+<div><p>Política de Privacidad</p><p>&copy; 2026 Creado por Arturo Martín de la Sierra García</p></div>
+<div class="der">
+<div><strong>Teléfono</strong><p>+34 620 22 01 03</p></div>
+<div><strong>Correo</strong><p>arturomsg07@gmail.com</p></div>
+<div><strong>Redes</strong><div class="redes"><a href="https://www.linkedin.com/in/arturo-martin-de-la-sierra3147">LinkedIn</a><img src="Img/LinkedIn_icon.svg.png" alt="Logo de LinkedIn"><a href="https://github.com/Artyx3147">GitHub</a><img src="Img/2111432.png" alt="Logo de GitHub"></div></div>
+</div>
+</footer>
+<div class="visor" id="visor" role="dialog" aria-modal="true" aria-label="Imagen ampliada"><button type="button" aria-label="Cerrar">&times;</button><img src="" alt=""></div>
+<script>
+(function(){
+var v=document.getElementById("visor"),big=v.querySelector("img");
+function abrir(i){big.src=i.src;big.alt=i.alt;v.classList.add("abierto")}
+function cerrar(){v.classList.remove("abierto")}
+document.querySelectorAll("img.zoom").forEach(function(i){
+i.tabIndex=0;i.setAttribute("role","button");
+i.addEventListener("click",function(){abrir(i)});
+i.addEventListener("keydown",function(e){if(e.key==="Enter"||e.key===" "){e.preventDefault();abrir(i)}});
+});
+v.addEventListener("click",cerrar);
+document.addEventListener("keydown",function(e){if(e.key==="Escape")cerrar()});
+})();
+</script>
+</body>
+</html>
